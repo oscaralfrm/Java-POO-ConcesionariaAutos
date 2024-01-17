@@ -41,22 +41,22 @@ public class CargarDatos extends javax.swing.JFrame {
         textfields = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
+        txtBox = new javax.swing.JPanel();
+        btnLimpiar = new javax.swing.JButton();
+        btnGuardar = new javax.swing.JButton();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         txtPuertas = new javax.swing.JTextField();
         txtModelo = new javax.swing.JTextField();
         txtMarca = new javax.swing.JTextField();
         txtMotor = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
         txtColor = new javax.swing.JTextField();
         txtPatente = new javax.swing.JTextField();
-        jPanel1 = new javax.swing.JPanel();
-        btnLimpiar = new javax.swing.JButton();
-        btnGuardar = new javax.swing.JButton();
-        jLabel15 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -101,66 +101,8 @@ public class CargarDatos extends javax.swing.JFrame {
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfaz/imagenes/blue-neon-border.png"))); // NOI18N
         textfields.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 0, -1, -1));
 
-        txtPuertas.setBackground(new java.awt.Color(255, 255, 255));
-        txtPuertas.setForeground(new java.awt.Color(0, 0, 0));
-        textfields.add(txtPuertas, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 320, 230, -1));
-
-        txtModelo.setBackground(new java.awt.Color(255, 255, 255));
-        txtModelo.setForeground(new java.awt.Color(0, 0, 0));
-        textfields.add(txtModelo, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 120, 230, -1));
-
-        txtMarca.setBackground(new java.awt.Color(255, 255, 255));
-        txtMarca.setForeground(new java.awt.Color(0, 0, 0));
-        textfields.add(txtMarca, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 160, 230, -1));
-
-        txtMotor.setBackground(new java.awt.Color(255, 255, 255));
-        txtMotor.setForeground(new java.awt.Color(0, 0, 0));
-        textfields.add(txtMotor, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 200, 230, -1));
-
-        jLabel3.setFont(new java.awt.Font("Roboto", 1, 18)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("N° Puertas");
-        textfields.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 320, -1, -1));
-
-        jLabel4.setFont(new java.awt.Font("Roboto", 1, 18)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("Modelo");
-        textfields.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 120, -1, -1));
-
-        jLabel7.setFont(new java.awt.Font("Roboto", 1, 18)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel7.setText("Marca");
-        textfields.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 160, -1, -1));
-
-        jLabel9.setFont(new java.awt.Font("Roboto", 1, 18)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel9.setText("Motor");
-        textfields.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 200, -1, -1));
-
-        jLabel13.setFont(new java.awt.Font("Roboto", 1, 18)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel13.setText("Color");
-        textfields.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 240, -1, -1));
-
-        jLabel14.setFont(new java.awt.Font("Roboto", 1, 18)); // NOI18N
-        jLabel14.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel14.setText("Patente");
-        textfields.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 280, -1, -1));
-
-        txtColor.setBackground(new java.awt.Color(255, 255, 255));
-        txtColor.setForeground(new java.awt.Color(0, 0, 0));
-        txtColor.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtColorActionPerformed(evt);
-            }
-        });
-        textfields.add(txtColor, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 240, 230, -1));
-
-        txtPatente.setBackground(new java.awt.Color(255, 255, 255));
-        txtPatente.setForeground(new java.awt.Color(0, 0, 0));
-        textfields.add(txtPatente, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 280, 230, -1));
-
-        jPanel1.setBackground(new java.awt.Color(43, 2, 58));
+        txtBox.setBackground(new java.awt.Color(43, 2, 58));
+        txtBox.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnLimpiar.setBackground(new java.awt.Color(217, 78, 31));
         btnLimpiar.setFont(new java.awt.Font("Lemon", 1, 24)); // NOI18N
@@ -174,6 +116,7 @@ public class CargarDatos extends javax.swing.JFrame {
                 btnLimpiarActionPerformed(evt);
             }
         });
+        txtBox.add(btnLimpiar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 349, 200, -1));
 
         btnGuardar.setBackground(new java.awt.Color(237, 7, 121));
         btnGuardar.setFont(new java.awt.Font("Lemon", 1, 24)); // NOI18N
@@ -188,38 +131,73 @@ public class CargarDatos extends javax.swing.JFrame {
                 btnGuardarActionPerformed(evt);
             }
         });
+        txtBox.add(btnGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(232, 349, 230, -1));
 
         jLabel15.setFont(new java.awt.Font("Lemon", 1, 24)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(255, 255, 255));
         jLabel15.setText("INGRESAR DATOS DEL VEHÍCULO");
+        txtBox.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 25, -1, -1));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(20, 20, 20)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel15)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(btnLimpiar, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btnGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(18, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(25, 25, 25)
-                .addComponent(jLabel15)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 292, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnLimpiar)
-                    .addComponent(btnGuardar))
-                .addGap(33, 33, 33))
-        );
+        jLabel14.setFont(new java.awt.Font("Roboto", 1, 18)); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel14.setText("Patente");
+        txtBox.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, -1, -1));
 
-        textfields.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 30, 480, 450));
+        jLabel13.setFont(new java.awt.Font("Roboto", 1, 18)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel13.setText("Color");
+        txtBox.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 210, -1, -1));
+
+        jLabel9.setFont(new java.awt.Font("Roboto", 1, 18)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel9.setText("Motor");
+        txtBox.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, -1, -1));
+
+        jLabel7.setFont(new java.awt.Font("Roboto", 1, 18)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setText("Marca");
+        txtBox.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, -1, -1));
+
+        jLabel4.setFont(new java.awt.Font("Roboto", 1, 18)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setText("Modelo");
+        txtBox.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 90, -1, -1));
+
+        jLabel3.setFont(new java.awt.Font("Roboto", 1, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setText("N° Puertas");
+        txtBox.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 290, -1, -1));
+
+        txtPuertas.setBackground(new java.awt.Color(255, 255, 255));
+        txtPuertas.setForeground(new java.awt.Color(0, 0, 0));
+        txtBox.add(txtPuertas, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 290, 230, -1));
+
+        txtModelo.setBackground(new java.awt.Color(255, 255, 255));
+        txtModelo.setForeground(new java.awt.Color(0, 0, 0));
+        txtBox.add(txtModelo, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 90, 230, -1));
+
+        txtMarca.setBackground(new java.awt.Color(255, 255, 255));
+        txtMarca.setForeground(new java.awt.Color(0, 0, 0));
+        txtBox.add(txtMarca, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 130, 230, -1));
+
+        txtMotor.setBackground(new java.awt.Color(255, 255, 255));
+        txtMotor.setForeground(new java.awt.Color(0, 0, 0));
+        txtBox.add(txtMotor, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 170, 230, -1));
+
+        txtColor.setBackground(new java.awt.Color(255, 255, 255));
+        txtColor.setForeground(new java.awt.Color(0, 0, 0));
+        txtColor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtColorActionPerformed(evt);
+            }
+        });
+        txtBox.add(txtColor, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 210, 230, -1));
+
+        txtPatente.setBackground(new java.awt.Color(255, 255, 255));
+        txtPatente.setForeground(new java.awt.Color(0, 0, 0));
+        txtBox.add(txtPatente, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 250, 230, -1));
+
+        textfields.add(txtBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 30, 480, 450));
 
         jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfaz/imagenes/konfetti-punkte-clipart-hintergrund.png"))); // NOI18N
         textfields.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(-220, -50, -1, -1));
@@ -306,8 +284,8 @@ public class CargarDatos extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel textfields;
+    private javax.swing.JPanel txtBox;
     private javax.swing.JTextField txtColor;
     private javax.swing.JTextField txtMarca;
     private javax.swing.JTextField txtModelo;

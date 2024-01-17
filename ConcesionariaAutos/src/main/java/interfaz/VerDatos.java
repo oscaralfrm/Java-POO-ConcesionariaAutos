@@ -224,10 +224,29 @@ public class VerDatos extends javax.swing.JFrame {
 
     private void btnEditarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditarActionPerformed
 
-        EditarDatos editarDatos = new EditarDatos();
-        editarDatos.setVisible(true);
-        editarDatos.setLocationRelativeTo(null);
+        // Si mi tabla no está vacía
+        if (tblAutomovil.getRowCount() > 0) {
+            // Y si la fila que seleccioné existe
+            if (tblAutomovil.getSelectedRow() != -1) {
+                // Conseguime el número de ID del registro Auto que estoy seleccionando
+                int numeroAutomovil = Integer.parseInt(String.valueOf(tblAutomovil.getValueAt(tblAutomovil.getSelectedRow(), 0)));
+                
+                EditarDatos editarDatos = new EditarDatos(numeroAutomovil);
+                editarDatos.setVisible(true);
+                editarDatos.setLocationRelativeTo(null);
+                
+                cargarTabla();
+                
+            } else {
+                // Si no seleccioné nada, marco con error
+                JOptionPane.showMessageDialog(null, 
+                        "Usted no seleccionó ningún vehículo", "Error", 
+                        JOptionPane.ERROR_MESSAGE);
+            }
+            
+        }
         
+
 
     }//GEN-LAST:event_btnEditarActionPerformed
 
@@ -258,7 +277,7 @@ public class VerDatos extends javax.swing.JFrame {
                 opciones[0]
                 );
                 
-                // Hacemos la validicación
+                // Hacemos la validación
                 
                 if (resultadoOpcion == JOptionPane.YES_OPTION) {
                     

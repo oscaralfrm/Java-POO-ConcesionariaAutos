@@ -53,5 +53,22 @@ public class Controlador {
         controladorPersist.eliminarVehiculoSeleccionado(numeroVehiculo);
 
     }
+
+    public void modificarAuto(Automovil automovil, String modelo, String marca, String color, String motor, String patente, int numeroPuertas) {
+
+        // Setteamos cada uno de los cambios, antes de pasarlo al controlador de la persistencia
+        
+        automovil.setCantidadPuertas(numeroPuertas);
+        automovil.setColor(color);
+        automovil.setMarca(marca);
+        automovil.setModelo(modelo);
+        automovil.setMotor(motor);
+        automovil.setPatente(patente);
+        
+        controladorPersist.modificarAuto(automovil);
+        
+       
+        
+    }
     
 }

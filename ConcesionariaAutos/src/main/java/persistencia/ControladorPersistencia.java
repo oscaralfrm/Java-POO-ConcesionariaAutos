@@ -37,7 +37,7 @@ public class ControladorPersistencia {
         return autoJpa.findAutomovil(idAuto);
     }
     
-    public ArrayList<Automovil> encontrarTodosAutomociles() {
+    public ArrayList<Automovil> encontrarTodosAutomoviles() {
         List<Automovil> automoviles = autoJpa.findAutomovilEntities();
         ArrayList<Automovil> listaAutomoviles = new ArrayList<>(automoviles);
         return listaAutomoviles;
@@ -59,7 +59,7 @@ public class ControladorPersistencia {
 
     // Procedemos a encontrar todos los automóviles utilizando la implementación del autoJPA
     public ArrayList<Automovil> encontrarLosAutomoviles() {
-        return encontrarTodosAutomociles();
+        return encontrarTodosAutomoviles();
     }
 
     
@@ -70,8 +70,12 @@ public class ControladorPersistencia {
 
     public void eliminarVehiculoSeleccionado(int numeroVehiculo) {
 
-        autoJpa.eliminarAuto(numeroVehiculo);
+        eliminarAuto(numeroVehiculo);
 
+    }
+
+    public void modificarAuto(Automovil automovil) {
+        editarAuto(automovil);
     }
     
     

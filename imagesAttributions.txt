@@ -1,0 +1,12 @@
+/* IMAGES USAGE ATTRIBUTIONS */
+
+- Vecteezy (Royalty Free Artists: https://es.vecteezy.com/miembros/royaltyfreeartists), image: 
+* <a href="https://es.vecteezy.com/png-gratis/ne%C3%B3n">Neón PNGs por Vecteezy</a>
+- Pikbest, image:
+* <a href="https://pikbest.com/free-png-images/technology-background.html">Free technology background png images from pikbest.com</a>
+- Iconscout Icons by: Andinur Studio (https://iconscout.com/contributors/andinur), Indahrusiati (https://iconscout.com/contributors/indah-rusiati),
+Fox Design (https://iconscout.com/contributors/amin-yusifov), Surangkana Jomjunyong (https://iconscout.com/contributors/surang),
+Khaled Hamel (https://iconscout.com/contributors/khld939), Kreasi Kanvas (https://iconscout.com/contributors/fauzanadiima)
+- Rest of the images used in the app are following the Creative Commons License or belong to Public Domain.
+
+/* Images used for educational programming purposes */
