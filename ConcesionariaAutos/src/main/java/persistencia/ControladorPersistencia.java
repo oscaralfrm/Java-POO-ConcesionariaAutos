@@ -46,6 +46,33 @@ public class ControladorPersistencia {
     
     
     // Creamos métodos pivote entre el controlador de la lógica y la persistencia
+
+    // CONTROLADOR PERSIST. - Acá usará el método JPA correspondiente, para guardaren BBDD
+    
+    public void guardarAuto(Automovil automovil) {
+        
+        // Se crea PERSISTE/GUARDA en la BBDD, el Automóvil CREADO EN EL CONTROLADOR DE LA LÓGICA
+       
+        autoJpa.create(automovil);
+        
+    }
+
+    // Procedemos a encontrar todos los automóviles utilizando la implementación del autoJPA
+    public ArrayList<Automovil> encontrarLosAutomoviles() {
+        return encontrarTodosAutomociles();
+    }
+
+    
+    // Método para devolver un automóvil según el ID pasado por parámetro
+    public Automovil buscarAutomovil(int numeroVehiculo) {
+        return autoJpa.findAutomovil(numeroVehiculo);
+    }
+
+    public void eliminarVehiculoSeleccionado(int numeroVehiculo) {
+
+        autoJpa.eliminarAuto(numeroVehiculo);
+
+    }
     
     
     

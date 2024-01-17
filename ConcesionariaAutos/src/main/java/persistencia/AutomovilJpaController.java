@@ -1,3 +1,7 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
 package persistencia;
 
 import java.io.Serializable;
@@ -12,15 +16,18 @@ import javax.persistence.criteria.Root;
 import logica.Automovil;
 import persistencia.exceptions.NonexistentEntityException;
 
-
+/**
+ *
+ * @author Oscar
+ */
 public class AutomovilJpaController implements Serializable {
 
-    // Agregamos el método constructor
+     // Agregamos el método constructor
     
     public AutomovilJpaController() {
         emf = Persistence.createEntityManagerFactory("UnidadPersistencia");
     }
-    
+
     public AutomovilJpaController(EntityManagerFactory emf) {
         this.emf = emf;
     }
@@ -132,6 +139,10 @@ public class AutomovilJpaController implements Serializable {
         } finally {
             em.close();
         }
+    }
+
+    void eliminarAuto(int numeroVehiculo) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
 }

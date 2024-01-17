@@ -20,6 +20,7 @@ public class Automovil implements Serializable {
     private String modelo;
     private String marca;
     private String color;
+    private String motor;
     private String patente;
     private int cantidadPuertas;
     
@@ -28,17 +29,16 @@ public class Automovil implements Serializable {
     public Automovil() {
     }
 
-    public Automovil(int autoId, String modelo, String marca, String color, String patente, int cantidadPuertas) {
+    public Automovil(int autoId, String modelo, String marca, String color, String motor, String patente, int cantidadPuertas) {
         this.autoId = autoId;
         this.modelo = modelo;
         this.marca = marca;
         this.color = color;
+        this.motor = motor;
         this.patente = patente;
         this.cantidadPuertas = cantidadPuertas;
     }
 
-    // Definimos métodos accesores
-    
     public int getAutoId() {
         return autoId;
     }
@@ -71,6 +71,14 @@ public class Automovil implements Serializable {
         this.color = color;
     }
 
+    public String getMotor() {
+        return motor;
+    }
+
+    public void setMotor(String motor) {
+        this.motor = motor;
+    }
+
     public String getPatente() {
         return patente;
     }
@@ -86,15 +94,12 @@ public class Automovil implements Serializable {
     public void setCantidadPuertas(int cantidadPuertas) {
         this.cantidadPuertas = cantidadPuertas;
     }
-    
-   // Definimos método toString()
 
     @Override
     public String toString() {
-        return "Automovil{" + "autoId=" + autoId + ", modelo=" + modelo + ", marca=" + marca + ", color=" + color + ", patente=" + patente + ", cantidadPuertas=" + cantidadPuertas + '}';
+        return "Automovil{" + "autoId=" + autoId + ", modelo=" + modelo + ", marca=" + marca + ", color=" + color + ", motor=" + motor + ", patente=" + patente + ", cantidadPuertas=" + cantidadPuertas + '}';
     }
-    
-    
+
     
     
 }
