@@ -7,6 +7,7 @@
 - Iconscout Icons by: Andinur Studio (https://iconscout.com/contributors/andinur), Indahrusiati (https://iconscout.com/contributors/indah-rusiati),
 Fox Design (https://iconscout.com/contributors/amin-yusifov), Surangkana Jomjunyong (https://iconscout.com/contributors/surang),
 Khaled Hamel (https://iconscout.com/contributors/khld939), Kreasi Kanvas (https://iconscout.com/contributors/fauzanadiima)
+- Retro Effects - Figma Community (https://www.figma.com/community/file/980901841316943020)
 - Rest of the images used in the app are following the Creative Commons License or belong to Public Domain.
 
 /* Images used for educational programming purposes */
