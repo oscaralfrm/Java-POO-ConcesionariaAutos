@@ -89,8 +89,8 @@ public class EditarDatos extends javax.swing.JFrame {
         jLabel2.setText("Datos");
         header.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 60, -1, -1));
 
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfaz/imagenes/Pink-Polygon-440.png"))); // NOI18N
-        header.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(-90, -40, -1, -1));
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfaz/imagenes/synth-girl-150.png"))); // NOI18N
+        header.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, -10, -1, -1));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfaz/imagenes/confetti.png"))); // NOI18N
         header.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -50, -1, -1));
