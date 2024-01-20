@@ -164,6 +164,8 @@ public class MenuPrincipal extends javax.swing.JFrame {
         CargarDatos cargarDatos = new CargarDatos();
         cargarDatos.setVisible(true);
         cargarDatos.setLocationRelativeTo(null);
+        cargarDatos.setResizable(false);
+        cargarDatos.setDefaultCloseOperation(HIDE_ON_CLOSE);
         
     }//GEN-LAST:event_btnCargarActionPerformed
 
@@ -172,6 +174,8 @@ public class MenuPrincipal extends javax.swing.JFrame {
         VerDatos verDatos = new VerDatos();
         verDatos.setVisible(true);
         verDatos.setLocationRelativeTo(null);
+        verDatos.setResizable(false);
+        verDatos.setDefaultCloseOperation(HIDE_ON_CLOSE);
         
     }//GEN-LAST:event_btnVerActionPerformed
 

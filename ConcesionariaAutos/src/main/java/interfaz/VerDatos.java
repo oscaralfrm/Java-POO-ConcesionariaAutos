@@ -234,6 +234,8 @@ public class VerDatos extends javax.swing.JFrame {
                 EditarDatos editarDatos = new EditarDatos(numeroAutomovil);
                 editarDatos.setVisible(true);
                 editarDatos.setLocationRelativeTo(null);
+                editarDatos.setResizable(false);
+                editarDatos.setDefaultCloseOperation(HIDE_ON_CLOSE);
                 
                 cargarTabla();
                 
